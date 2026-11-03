@@ -61,7 +61,7 @@ export default function BranchesSection({ branches }: BranchesSectionProps) {
   };
 
   return (
-    <section id="branches" className="py-10 sm:py-20 relative z-20">
+    <section id="branches" className="pt-4 sm:pt-8 pb-10 sm:pb-16 relative z-20">
       <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-8 sm:mb-14">

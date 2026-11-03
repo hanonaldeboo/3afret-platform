@@ -19,7 +19,7 @@ export default function HeroSection({ data }: HeroSectionProps) {
   )}`;
 
   return (
-    <section id="hero" className="relative min-h-[85vh] sm:min-h-[92vh] flex items-center justify-center pt-24 sm:pt-28 pb-12 sm:pb-16 overflow-hidden">
+    <section id="hero" className="relative pt-24 sm:pt-32 pb-4 sm:pb-6 overflow-hidden flex flex-col items-center justify-center">
       {/* Ambient Glows */}
       <div className="glow-orb w-[300px] sm:w-[500px] h-[300px] sm:h-[500px] bg-gold-500/10 -top-10 sm:-top-20 right-1/4" />
       <div className="glow-orb w-[250px] sm:w-[400px] h-[250px] sm:h-[400px] bg-amber-600/10 bottom-5 left-5" />
@@ -49,7 +49,7 @@ export default function HeroSection({ data }: HeroSectionProps) {
         </p>
 
         {/* CTA Buttons */}
-        <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-3 sm:gap-5 mb-10 sm:mb-14">
+        <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-3 sm:gap-5 mb-5 sm:mb-7">
           <a
             href={hero.primaryCtaLink}
             className="btn-gold w-full sm:w-auto px-7 py-3 sm:py-3.5 rounded-xl font-extrabold text-sm sm:text-base flex items-center justify-center gap-2.5 shadow-gold-glow group active:scale-95 transition-transform"
