@@ -25,10 +25,10 @@ export default function TikTokSection({ tiktok }: TikTokSectionProps) {
               <div className="relative w-24 h-24 sm:w-32 sm:h-32 rounded-full overflow-hidden border-2 border-gold-500 shadow-gold-glow shrink-0 p-1 bg-obsidian-900">
                 <div className="relative w-full h-full rounded-full overflow-hidden">
                   <Image
-                    src={tiktok.avatarUrl || "/images/tiktok-avatar.svg"}
+                    src={tiktok.avatarUrl || "/images/tiktok-avatar.jpg"}
                     alt={tiktok.name}
                     fill
-                    className="object-cover"
+                    className="object-cover object-[center_20%]"
                   />
                 </div>
                 {/* TikTok Badge */}
