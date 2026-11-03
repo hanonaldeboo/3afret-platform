@@ -28,21 +28,21 @@ export default function FloatingWhatsapp({ recharge }: FloatingWhatsappProps) {
 
   return (
     <>
-      <div className="fixed bottom-4 left-4 sm:bottom-6 sm:left-6 z-40 flex items-center gap-2.5">
+      <div className="fixed bottom-5 left-5 sm:bottom-7 sm:left-7 z-[9999] flex items-center gap-3">
         {/* Tooltip speech bubble */}
         {showTooltip && (
-          <div className="flex items-center gap-2 px-3 sm:px-4 py-2 rounded-2xl bg-obsidian-900/95 border border-gold-500/40 text-slate-100 text-xs sm:text-sm font-bold shadow-2xl backdrop-blur-md animate-in fade-in slide-in-from-left-2">
+          <div 
+            onClick={() => setIsOpen(true)}
+            className="cursor-pointer flex items-center gap-2 px-3.5 sm:px-4 py-2.5 rounded-2xl bg-obsidian-950/95 border-2 border-gold-500/60 text-white text-xs sm:text-sm font-extrabold shadow-2xl backdrop-blur-md hover:border-gold-400 hover:scale-105 active:scale-95 transition-all animate-in fade-in slide-in-from-left-2"
+          >
+            <Sparkles className="w-4 h-4 text-gold-400 shrink-0 animate-pulse" />
+            <span className="gold-text-gradient font-black">ازاي تعرض حسابك في متجر عفريت</span>
             <button
               type="button"
-              onClick={() => setIsOpen(true)}
-              className="hover:text-gold-400 transition-colors cursor-pointer flex items-center gap-1.5 text-right"
-            >
-              <Sparkles className="w-3.5 h-3.5 text-gold-400 shrink-0" />
-              <span>ازاي تعرض حسابك في متجر عفريت</span>
-            </button>
-            <button
-              type="button"
-              onClick={() => setShowTooltip(false)}
+              onClick={(e) => {
+                e.stopPropagation();
+                setShowTooltip(false);
+              }}
               className="text-slate-400 hover:text-white p-0.5 mr-1"
               aria-label="إغلاق التنبيه"
             >
@@ -55,36 +55,36 @@ export default function FloatingWhatsapp({ recharge }: FloatingWhatsappProps) {
         <button
           type="button"
           onClick={() => setIsOpen(true)}
-          className="relative group w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-gradient-to-tr from-gold-600 via-gold-500 to-amber-300 text-black flex items-center justify-center shadow-xl shadow-gold-500/40 active:scale-95 hover:scale-110 transition-transform duration-300 cursor-pointer"
+          className="relative group w-14 h-14 sm:w-16 sm:h-16 rounded-full bg-gradient-to-tr from-gold-500 via-amber-400 to-gold-300 text-black flex items-center justify-center shadow-2xl shadow-gold-500/50 active:scale-95 hover:scale-110 transition-transform duration-300 cursor-pointer"
           aria-label="ازاي تعرض حسابك في متجر عفريت"
         >
           {/* Radar ping animation */}
           <span className="absolute -inset-1 rounded-full bg-gold-400 opacity-75 animate-ping group-hover:opacity-100" />
 
           <div className="relative z-10 flex items-center justify-center">
-            <Play className="w-6 h-6 sm:w-7 sm:h-7 fill-black text-black translate-x-[-1px]" />
+            <Play className="w-7 h-7 sm:w-8 sm:h-8 fill-black text-black translate-x-[-1px]" />
           </div>
         </button>
       </div>
 
       {/* Video Modal */}
       {isOpen && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center p-2.5 sm:p-6 bg-black/95 backdrop-blur-md animate-in fade-in duration-200">
+        <div className="fixed inset-0 z-[10000] flex items-center justify-center p-2.5 sm:p-6 bg-black/95 backdrop-blur-md animate-in fade-in duration-200">
           {/* Backdrop click to close */}
           <div className="absolute inset-0" onClick={() => setIsOpen(false)} />
 
-          <div className="relative z-10 w-full max-w-4xl bg-obsidian-950 border border-gold-500/40 rounded-2xl sm:rounded-3xl p-3 sm:p-6 shadow-2xl overflow-hidden flex flex-col max-h-[94vh]">
+          <div className="relative z-10 w-full max-w-4xl bg-obsidian-950 border border-gold-500/50 rounded-2xl sm:rounded-3xl p-4 sm:p-6 shadow-2xl overflow-hidden flex flex-col max-h-[94vh]">
             {/* Modal Header */}
             <div className="flex items-center justify-between gap-3 pb-3 sm:pb-4 border-b border-gold-500/20">
               <div className="flex items-center gap-2.5">
-                <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-gold-500/15 border border-gold-500/40 flex items-center justify-center text-gold-400 shrink-0">
-                  <Video className="w-4 h-4 sm:w-5 sm:h-5" />
+                <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-gold-500/20 border border-gold-500/50 flex items-center justify-center text-gold-400 shrink-0">
+                  <Video className="w-5 h-5 text-gold-400" />
                 </div>
                 <div>
-                  <h4 className="text-sm sm:text-base font-bold text-white">
+                  <h4 className="text-base sm:text-lg font-black text-white">
                     ازاي تعرض حسابك في متجر عفريت
                   </h4>
-                  <p className="text-[10px] sm:text-xs text-gold-400/90 font-medium">
+                  <p className="text-[11px] sm:text-xs text-gold-400/90 font-medium">
                     فيديو الشرح التوضيحي الرسمي لمتجر 3afret
                   </p>
                 </div>
@@ -101,7 +101,7 @@ export default function FloatingWhatsapp({ recharge }: FloatingWhatsappProps) {
             </div>
 
             {/* Video Player Box */}
-            <div className="my-2 sm:my-4 flex-1 flex items-center justify-center overflow-hidden min-h-0">
+            <div className="my-3 sm:my-4 flex-1 flex items-center justify-center overflow-hidden min-h-0">
               <video
                 controls
                 autoPlay
