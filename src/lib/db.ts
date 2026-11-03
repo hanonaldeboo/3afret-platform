@@ -97,6 +97,7 @@ const getDefaultData = (): SiteData => {
     whatsappRecharge: {
       title: "استور الشحن الرسمي لعلامة 3afret",
       description: "القناة الرسمية المعتمدة لاستور شحن شدات ببجي، جواهر فري فاير، كوينز تيك توك، وبطاقات الألعاب بأرخص الأسعار الرسمية وأسرع تسليم بالـ ID.",
+      bannerUrl: "/images/recharge-banner.jpg",
       channelUrl: "https://whatsapp.com/channel/0029VaW23cQ9sBIGmrdGdz3a",
       phoneNumber: "+201158620386",
       defaultMessage: "مرحباً، أود شحن ألعاب / الاستفسار من متجر 3afret",

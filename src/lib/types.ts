@@ -34,6 +34,7 @@ export interface OfficialChannel {
 export interface WhatsappRecharge {
   title: string;
   description: string;
+  bannerUrl?: string;
   phoneNumber?: string;
   channelUrl?: string;
   defaultMessage: string;

@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import Image from "next/image";
 import { Zap, CheckCircle2, MessageCircle, Clock, ExternalLink, PhoneCall, Sparkles } from "lucide-react";
 import { WhatsappRecharge } from "@/lib/types";
 
@@ -86,51 +87,29 @@ export default function WhatsappRechargeSection({ recharge }: WhatsappRechargeSe
               </div>
             </div>
 
-            {/* Left side: Interactive Visual Card */}
-            <div className="lg:col-span-5">
-              <div className="glass-panel p-4 sm:p-8 rounded-3xl border border-emerald-500/30 relative overflow-hidden text-center space-y-4 sm:space-y-5">
-                <div className="w-16 h-16 sm:w-20 sm:h-20 mx-auto rounded-2xl bg-gradient-to-br from-emerald-500 to-teal-700 flex items-center justify-center text-white shadow-xl shadow-emerald-500/25">
-                  <svg className="w-8 h-8 sm:w-10 sm:h-10 fill-current" viewBox="0 0 24 24">
-                    <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.312.045-.694.073-1.109-.06-.554-.176-1.267-.506-2.181-1.325-1.172-1.049-1.924-2.316-2.138-2.684-.213-.368-.023-.567.16-.75.166-.165.372-.423.558-.635.186-.211.248-.36.372-.599.124-.24.062-.45-.031-.635-.093-.186-.837-2.02-1.147-2.766-.303-.728-.61-.628-.838-.64-.216-.01-.465-.013-.713-.013-.248 0-.651.093-.992.465-.34.372-1.302 1.272-1.302 3.104 0 1.832 1.333 3.604 1.519 3.852.186.248 2.623 4.004 6.357 5.617.888.384 1.581.614 2.122.785.89.283 1.7.243 2.34.147.714-.107 2.18-.892 2.49-1.753.31-.861.31-1.599.217-1.754-.093-.155-.34-.247-.714-.433z"/>
-                  </svg>
-                </div>
-
-                <div>
-                  <h4 className="text-lg sm:text-xl font-black text-white mb-1">
-                    استور الشحن المعتمد 3afret
-                  </h4>
-                  <p className="text-[11px] sm:text-xs text-emerald-400 font-semibold mb-2">
-                    المعتمد للشحن والاستفسار:
-                  </p>
+            {/* Left side: Visual Banner Preview */}
+            <div className="lg:col-span-5 flex justify-center">
+              <div className="relative aspect-square w-full max-w-[320px] sm:max-w-[400px] lg:max-w-none rounded-3xl overflow-hidden border border-emerald-500/40 shadow-2xl group bg-obsidian-900">
+                <Image
+                  src={recharge.bannerUrl || "/images/recharge-banner.jpg"}
+                  alt={recharge.title}
+                  fill
+                  className="object-cover transition-transform duration-500 group-hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-transparent to-transparent pointer-events-none" />
+                <div className="absolute bottom-3 right-3 left-3 flex items-center justify-between pointer-events-auto">
+                  <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-gradient-to-r from-emerald-500 to-emerald-600 text-slate-950 text-[11px] sm:text-xs font-black shadow-lg">
+                    <Zap className="w-3.5 h-3.5 fill-current" />
+                    <span>استور شحن معتمد</span>
+                  </span>
                   <a
                     href={directChatHref}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-block font-mono text-base sm:text-lg font-black text-gold-400 bg-obsidian-900 border border-emerald-500/50 px-6 py-1.5 rounded-xl hover:border-emerald-400 hover:text-gold-300 transition-colors tracking-wider shadow-sm active:scale-95"
+                    className="inline-flex items-center gap-1.5 text-[11px] sm:text-xs font-bold text-white bg-black/70 hover:bg-black/90 border border-emerald-500/40 px-3 py-1.5 rounded-xl backdrop-blur-md transition-all active:scale-95"
                   >
-                    3afRet
-                  </a>
-                </div>
-
-                <div className="pt-1 sm:pt-2 flex flex-col gap-2">
-                  <a
-                    href={directChatHref}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="btn-gold w-full py-2.5 sm:py-3 rounded-xl text-xs sm:text-sm font-bold flex items-center justify-center gap-2 active:scale-95 transition-transform"
-                  >
-                    <MessageCircle className="w-4 h-4" />
-                    <span>مراسلة 3afRet مباشرة عبر واتساب</span>
-                  </a>
-
-                  <a
-                    href={channelHref}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="w-full py-2.5 sm:py-2 rounded-xl text-xs font-semibold text-slate-300 hover:text-white bg-obsidian-900 border border-slate-800 hover:border-emerald-500/40 transition-colors flex items-center justify-center gap-1.5 active:scale-95"
-                  >
-                    <span>دخول قناة استور الشحن</span>
-                    <ExternalLink className="w-3.5 h-3.5 text-emerald-400" />
+                    <span>تواصل مباشر</span>
+                    <ExternalLink className="w-3 h-3 text-emerald-400" />
                   </a>
                 </div>
               </div>
