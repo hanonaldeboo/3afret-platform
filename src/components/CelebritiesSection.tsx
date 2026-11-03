@@ -56,13 +56,6 @@ export default function CelebritiesSection({ celebrities }: CelebritiesSectionPr
                       <Play className="w-6 h-6 sm:w-7 sm:h-7 fill-current translate-x-[-1px]" />
                     </div>
                   </div>
-
-                  {/* Media Type Badge */}
-                  <div className="absolute top-3 right-3">
-                    <span className="text-[10px] sm:text-[11px] font-bold px-2.5 py-0.5 sm:py-1 rounded-md bg-black/85 text-gold-400 border border-gold-500/30 backdrop-blur-sm">
-                      {item.videoType === 'file' ? 'فيديو إعلاني' : item.videoType.toUpperCase()}
-                    </span>
-                  </div>
                 </div>
 
                 {/* Video Info Body */}
