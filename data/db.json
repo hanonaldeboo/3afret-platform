@@ -1,0 +1,249 @@
+{
+  "settings": {
+    "brandName": "3afret",
+    "brandSlogan": "المنصة الأولى الموثوقة لتجارة الحسابات والشحن الرقمي",
+    "brandDescription": "الوجهة الرسمية المعتمدة لبيع وشراء الحسابات، فروع وجروبات التداول الرقمي، استور الشحن الرسمي عبر واتساب، وخدمات الضمان المعتمدة فيسبوك مع كبار المشاهير.",
+    "contactEmail": "contact@3afret.com",
+    "footerText": "جميع الحقوق محفوظة © 2026 علامة 3afret الرسمية. منصة متخصصة ومحمية بأعلى معايير الأمان والضمان التجاري.",
+    "floatingWhatsappEnabled": true
+  },
+  "hero": {
+    "tagline": "المنصة الرسمية المعتمدة رقمياً",
+    "mainTitle": "بوابتك الآمنة لعالم",
+    "highlightedTitle": "تجارة الحسابات والشحن الفوري",
+    "subtitle": "نجمع لك فروع وجروبات بيع وشراء الحسابات، استور الشحن الرسمي على واتساب، وقنوات العروض والضمان الموثوقة في مكان واحد فاخر.",
+    "primaryCtaText": "استكشف فروع البيع والشراء",
+    "primaryCtaLink": "#branches",
+    "secondaryCtaText": "دخول استور الشحن الرسمي",
+    "secondaryCtaLink": "#recharge",
+    "bannerNotice": "⚡ وساطة معتمدة وضمان فيسبوك موثق 100% لجميع المعاملات والصفقات"
+  },
+  "stats": {
+    "totalMembers": "+180,000",
+    "totalGroups": "فرعان رسميان",
+    "totalBranches": "فروع معتمدة",
+    "totalServices": "100%",
+    "totalCollaborations": "+30 إعلان",
+    "ratingScore": "4.9 / 5"
+  },
+  "branches": [
+    {
+      "id": "branch-1",
+      "name": "فرع بيع وشراء الحسابات (الفرع الأول)",
+      "description": "المجتمع الرسمي للفرع الأول لتداول وبيع وشراء كافة حسابات الألعاب والمنصات تحت إشراف وضمان 3afret المباشر.",
+      "icon": "ShieldAlert",
+      "order": 1,
+      "groups": [
+        {
+          "id": "group-branch-1",
+          "branchId": "branch-1",
+          "name": "جروب بيع وشراء حسابات (الفرع الأول)",
+          "description": "الجروب الرسمي للفرع الأول المعتمد لبيع وشراء الحسابات والوساطة الآمنة بين البائع والمشتري مع تسليم فوري.",
+          "platform": "whatsapp",
+          "category": "بيع وشراء فوري",
+          "link": "https://chat.whatsapp.com/H3WYKjkkxyFIs0BuoIZ7V2?s=cl&p=a&iam=2",
+          "badge": "الفرع الأول الرسمي",
+          "memberCount": "+1,024 عضو",
+          "image": "/images/branch-1.jpg",
+          "order": 1
+        }
+      ]
+    },
+    {
+      "id": "branch-2",
+      "name": "فرع بيع وشراء الحسابات (الفرع الثاني)",
+      "description": "المجتمع الرسمي للفرع الثاني المخصص لعرض وطلب الحسابات النادرة والصفقات المميزة بضمان كامل 24/7.",
+      "icon": "Flame",
+      "order": 2,
+      "groups": [
+        {
+          "id": "group-branch-2",
+          "branchId": "branch-2",
+          "name": "جروب بيع وشراء حسابات (الفرع الثاني)",
+          "description": "الجروب الرسمي للفرع الثاني لتداول الحسابات ونقل الملكية الآمن تحت إشراف الإدارة المباشر بأعلى معايير الثقة.",
+          "platform": "whatsapp",
+          "category": "بيع وشراء فوري",
+          "link": "https://chat.whatsapp.com/LOrVn8ILIWV5Wcy95Dpt7g?s=cl&p=a&iam=2",
+          "badge": "الفرع الثاني الرسمي",
+          "memberCount": "+1,020 عضو",
+          "image": "/images/branch-2.jpg",
+          "order": 1
+        }
+      ]
+    }
+  ],
+  "officialChannel": {
+    "title": "قناة بيع وشراء الحسابات الرسمية",
+    "name": "قناة 3afret الرسمية على واتساب",
+    "description": "القناة الرسمية المعتمدة لنشر أقوى عروض الحسابات والصفقات الكبرى فور توفرها مع الفحص والتدقيق المسبق لكافة البيانات.",
+    "link": "https://whatsapp.com/channel/0029Vb7tj9O0QeajvIM7A83R",
+    "bannerUrl": "/images/channel-banner.jpg",
+    "badge": "قناة واتساب الرسمية الموثقة",
+    "features": [
+      "نشر فوري للحسابات الجديدة مع الأسعار والمواصفات",
+      "تحديث دوري لحالة الحسابات المتوفرة والمباعة",
+      "فحص أمان كامل لكافة الإيميلات والارتباطات",
+      "تنبيهات فورية عند انطلاق العروض والخصومات الحصرية"
+    ]
+  },
+  "whatsappRecharge": {
+    "title": "استور الشحن الرسمي لعلامة 3afret",
+    "description": "القناة الرسمية المعتمدة لاستور شحن شدات ببجي، جواهر فري فاير، كوينز تيك توك، وبطاقات الألعاب بأرخص الأسعار الرسمية وأسرع تسليم بالـ ID.",
+    "channelUrl": "https://whatsapp.com/channel/0029VaW23cQ9sBIGmrdGdz3a",
+    "phoneNumber": "+201158620386",
+    "defaultMessage": "مرحباً، أود شحن ألعاب / الاستفسار من متجر 3afret",
+    "badge": "استور الشحن المعتمد 24/7",
+    "features": [
+      "شحن شدات ببجي UC فوري بالـ ID خلال دقائق",
+      "شحن جواهر فري فاير Diamonds بأرخص الأسعار",
+      "شحن عملات وكوينز تيك توك لحسابك مباشرة",
+      "عروض يومية وخصومات حصرية لأعضاء قناة الاستور"
+    ]
+  },
+  "facebookGuarantee": {
+    "title": "منشور الضمان والوساطة الرسمي المعتمد",
+    "description": "هل ترغب في بيع أو شراء حساب دون أي مخاطرة؟ منشور الضمان الرسمي لعلامة 3afret على فيسبوك يوثق آلاف الصفقات الناجحة ويوفر وساطة معتمدة لحفظ الأموال وفحص الحسابات وحماية حق البائع والمشتري.",
+    "postUrl": "https://www.facebook.com/share/p/1ETb6oJoQR/",
+    "bannerUrl": "/images/guarantee-banner.jpg",
+    "badge": "منشور الضمان الرسمي 100%",
+    "features": [
+      "رابط مباشر لمنشور الضمان الموثق على فيسبوك",
+      "حفظ الأموال لدى الوسيط المعتمد حتى تأكيد الاستلام 100%",
+      "آلاف المعاملات الناجحة والتقييمات الإيجابية في التعليقات",
+      "إشراف أمني وتجاري متكامل لحماية الطرفين ونقل الملكية"
+    ]
+  },
+  "tiktokAccount": {
+    "name": "3afret Store | عفريت ستور",
+    "username": "@3afret_store",
+    "bio": "الحساب الرسمي لعلامة 3afret ⚡ أقوى عروض الحسابات واستور الشحن المباشر | بثوث يومية وفيديوهات المشاهير والجوائز 🔥",
+    "avatarUrl": "/images/tiktok-avatar.svg",
+    "profileUrl": "https://tiktok.com/@3afret_store",
+    "followersCount": "+350K",
+    "likesCount": "+4.2M"
+  },
+  "celebrities": [
+    {
+      "id": "celeb-1",
+      "creatorName": "التيكتوكر بسملة",
+      "creatorRole": "صانعة محتوى ومؤثرة ألعاب",
+      "creatorAvatar": "/celebrities/thumb-1.jpeg",
+      "title": "وسيط عفريت لبيع وشراء الحسابات - Free Fire & PUBG مع بسملة",
+      "description": "توثيق رسمي لتجربة وساطة عفريت لبيع وشراء حسابات الألعاب بأعلى معايير الأمان والسرعة ونقل الملكية الفوري.",
+      "videoType": "file",
+      "videoUrl": "/celebrities/video-1.mp4",
+      "thumbnailUrl": "/celebrities/thumb-1.jpeg",
+      "order": 1
+    },
+    {
+      "id": "celeb-2",
+      "creatorName": "صانعة المحتوى ندى",
+      "creatorRole": "مؤثرة وبلوجر سوشيال ميديا",
+      "creatorAvatar": "/celebrities/thumb-2.jpeg",
+      "title": "وسيط عفريت الأضمن - ثقة الناس هي سر نجاحنا",
+      "description": "إعلان يبرز سرعة التوصيل والاحترافية والأمان الكامل بنسبة 100% في كافة معاملات وساطة عفريت المعتمدة.",
+      "videoType": "file",
+      "videoUrl": "/celebrities/video-2.mp4",
+      "thumbnailUrl": "/celebrities/thumb-2.jpeg",
+      "order": 2
+    },
+    {
+      "id": "celeb-3",
+      "creatorName": "التيكتوكر جانج (GANG)",
+      "creatorRole": "ستريمر وصانع محتوى ألعاب وبثوث",
+      "creatorAvatar": "/celebrities/thumb-3.jpeg",
+      "title": "وسيط عفريت - ضمان وأقوى متجر في مصر مع جانج",
+      "description": "تجربة واستعراض لقوة وسرعة استور عفريت في تأمين المعاملات والصفقات وحفظ حقوق البائع والمشتري.",
+      "videoType": "file",
+      "videoUrl": "/celebrities/video-3.mp4",
+      "thumbnailUrl": "/celebrities/thumb-3.jpeg",
+      "order": 3
+    },
+    {
+      "id": "celeb-4",
+      "creatorName": "التيكتوكر سعدون",
+      "creatorRole": "صانع محتوى تيك توك وستريمر مشهور",
+      "creatorAvatar": "/celebrities/thumb-4.jpeg",
+      "title": "ستور عفريت - أفضل ستور في مصر (معاك دايماً) مع سعدون",
+      "description": "مراجعة شاملة لخدمات الشحن الفوري بالـ ID وتداول الحسابات مع توضيح سرعة الاستجابة وأمان المعاملات.",
+      "videoType": "file",
+      "videoUrl": "/celebrities/video-4.mp4",
+      "thumbnailUrl": "/celebrities/thumb-4.jpeg",
+      "order": 4
+    },
+    {
+      "id": "celeb-5",
+      "creatorName": "البلوجر ريم",
+      "creatorRole": "مؤثرة وبلوجر سوشيال ميديا",
+      "creatorAvatar": "/celebrities/thumb-5.jpeg",
+      "title": "وسيط عفريت - أمان 100% وثقة ومصداقية (معاك دايماً)",
+      "description": "إشادة وتوثيق لسرعة خدمات وساطة عفريت، وتأمين الحسابات والشحن الفوري لكافة ألعاب المنصات.",
+      "videoType": "file",
+      "videoUrl": "/celebrities/video-5.mp4",
+      "thumbnailUrl": "/celebrities/thumb-5.jpeg",
+      "order": 5
+    },
+    {
+      "id": "celeb-6",
+      "creatorName": "النجمة مريم",
+      "creatorRole": "صانعة محتوى ومؤثرة تيك توك",
+      "creatorAvatar": "/celebrities/thumb-6.jpeg",
+      "title": "ستور عفريت - أفضل متجر في مصر لخدمات الألعاب والحسابات",
+      "description": "إعلان رسمي مميز يوضح سبب اختيار علامة 3afret كأفضل خيار موثوق لشحن شدات الألعاب وضمان الحسابات.",
+      "videoType": "file",
+      "videoUrl": "/celebrities/video-6.mp4",
+      "thumbnailUrl": "/celebrities/thumb-6.jpeg",
+      "order": 6
+    }
+  ],
+  "sectionsOrder": [
+    {
+      "id": "hero",
+      "name": "الواجهة الرئيسية والبانر الترحيبي",
+      "enabled": true,
+      "order": 1
+    },
+    {
+      "id": "stats",
+      "name": "إحصائيات المنصة وإنجازات 3afret",
+      "enabled": true,
+      "order": 2
+    },
+    {
+      "id": "branches",
+      "name": "فروع وجروبات البيع والشراء",
+      "enabled": true,
+      "order": 3
+    },
+    {
+      "id": "channel",
+      "name": "قناة بيع وشراء الحسابات الرسمية",
+      "enabled": true,
+      "order": 4
+    },
+    {
+      "id": "recharge",
+      "name": "استور الشحن الرسمي عبر واتساب",
+      "enabled": true,
+      "order": 5
+    },
+    {
+      "id": "guarantee",
+      "name": "منشور ضمان فيسبوك المعتمد",
+      "enabled": true,
+      "order": 6
+    },
+    {
+      "id": "tiktok",
+      "name": "حساب وقناة تيك توك الرسمية",
+      "enabled": true,
+      "order": 7
+    },
+    {
+      "id": "celebrities",
+      "name": "معرض فيديوهات النجوم والمشاهير",
+      "enabled": true,
+      "order": 8
+    }
+  ]
+}

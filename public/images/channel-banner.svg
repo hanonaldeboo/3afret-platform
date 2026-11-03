@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" fill="none">
+  <defs>
+    <radialGradient id="bgGrad" cx="50%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#1A1829"/>
+      <stop offset="60%" stop-color="#0A0912"/>
+      <stop offset="100%" stop-color="#050507"/>
+    </radialGradient>
+    <linearGradient id="goldLinear" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF099"/>
+      <stop offset="50%" stop-color="#D4AF37"/>
+      <stop offset="100%" stop-color="#996E08"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bgGrad)" />
+
+  <!-- Geometric Circuit Lines -->
+  <g opacity="0.15" stroke="#D4AF37" stroke-width="1.5">
+    <circle cx="600" cy="315" r="280" stroke-dasharray="10 15" />
+    <circle cx="600" cy="315" r="220" />
+    <line x1="0" y1="315" x2="1200" y2="315" />
+    <line x1="600" y1="0" x2="600" y2="630" />
+    <line x1="200" y1="100" x2="1000" y2="530" />
+    <line x1="200" y1="530" x2="1000" y2="100" />
+  </g>
+
+  <!-- Golden Central Glow Badge -->
+  <circle cx="600" cy="270" r="110" fill="rgba(212, 175, 55, 0.08)" stroke="url(#goldLinear)" stroke-width="3" filter="url(#glow)"/>
+
+  <!-- Telegram / Channel Icon Symbol -->
+  <g transform="translate(545, 215) scale(1.1)">
+    <path d="M90 10 L10 45 L40 60 L75 25 L48 65 L80 85 Z" fill="url(#goldLinear)" />
+  </g>
+
+  <!-- Titles -->
+  <text x="600" y="440" text-anchor="middle" font-family="'Cairo', sans-serif" font-weight="900" font-size="46" fill="url(#goldLinear)">
+    القناة الرسمية للبيع والشراء المباشر 3AFRET
+  </text>
+  <text x="600" y="495" text-anchor="middle" font-family="'Cairo', sans-serif" font-weight="500" font-size="24" fill="#CBD5E1">
+    تحديث دوري 24/7 لأقوى الحسابات والعروض الحصرية بأسعار الجملة والوساطة المعتمدة
+  </text>
+
+  <!-- Verified Badge -->
+  <rect x="490" y="525" width="220" height="42" rx="21" fill="rgba(212, 175, 55, 0.15)" stroke="url(#goldLinear)" stroke-width="1.5"/>
+  <text x="600" y="552" text-anchor="middle" font-family="'Cairo', sans-serif" font-weight="700" font-size="16" fill="#F8FAFC">
+    ✓ القناة المعتمدة رقمياً
+  </text>
+</svg>

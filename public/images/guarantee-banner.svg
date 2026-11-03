@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" fill="none">
+  <defs>
+    <radialGradient id="guarBg" cx="50%" cy="30%" r="75%">
+      <stop offset="0%" stop-color="#1B1C2E"/>
+      <stop offset="50%" stop-color="#0E0F1A"/>
+      <stop offset="100%" stop-color="#060608"/>
+    </radialGradient>
+    <linearGradient id="goldGuar" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF5B8"/>
+      <stop offset="50%" stop-color="#D4AF37"/>
+      <stop offset="100%" stop-color="#AA7C11"/>
+    </linearGradient>
+    <linearGradient id="fbBlue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1877F2"/>
+      <stop offset="100%" stop-color="#0D53B5"/>
+    </linearGradient>
+    <filter id="guarGlow">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#guarBg)" />
+
+  <!-- Outer Tech Border -->
+  <rect x="30" y="30" width="1140" height="570" rx="20" stroke="url(#goldGuar)" stroke-width="2" stroke-opacity="0.3" fill="none"/>
+
+  <!-- Shield Shape in Center -->
+  <g transform="translate(600, 240)">
+    <polygon points="0,-110 95,-60 95,45 0,115 -95,45 -95,-60" fill="rgba(24, 119, 242, 0.12)" stroke="url(#goldGuar)" stroke-width="3" filter="url(#guarGlow)"/>
+    <!-- Checkmark inside Shield -->
+    <path d="M-35 5 L-10 30 L45 -25" fill="none" stroke="url(#goldGuar)" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Facebook Badge Top-Right -->
+  <g transform="translate(1000, 70)">
+    <circle cx="28" cy="28" r="28" fill="url(#fbBlue)"/>
+    <text x="28" y="38" text-anchor="middle" font-family="'Segoe UI', sans-serif" font-weight="900" font-size="32" fill="#FFFFFF">f</text>
+  </g>
+
+  <!-- Titles -->
+  <text x="600" y="420" text-anchor="middle" font-family="'Cairo', sans-serif" font-weight="900" font-size="44" fill="url(#goldGuar)">
+    منشور الضمان والوساطة الرسمي المعتمد 3AFRET
+  </text>
+  <text x="600" y="475" text-anchor="middle" font-family="'Cairo', sans-serif" font-weight="600" font-size="24" fill="#F1F5F9">
+    أكثر من 5,000 صفقة ناجحة بضمان فيسبوك الرسمي | حماية كاملة للمشتري والبائع
+  </text>
+
+  <!-- Trust Badges Row -->
+  <g transform="translate(300, 520)">
+    <rect x="0" y="0" width="180" height="38" rx="8" fill="rgba(212, 175, 55, 0.1)" stroke="url(#goldGuar)" stroke-width="1"/>
+    <text x="90" y="24" text-anchor="middle" font-family="'Cairo', sans-serif" font-weight="600" font-size="14" fill="#E2E8F0">🛡️ حماية الأموال 100%</text>
+
+    <rect x="210" y="0" width="180" height="38" rx="8" fill="rgba(212, 175, 55, 0.1)" stroke="url(#goldGuar)" stroke-width="1"/>
+    <text x="300" y="24" text-anchor="middle" font-family="'Cairo', sans-serif" font-weight="600" font-size="14" fill="#E2E8F0">⚡ سرعة في التسليم</text>
+
+    <rect x="420" y="0" width="180" height="38" rx="8" fill="rgba(212, 175, 55, 0.1)" stroke="url(#goldGuar)" stroke-width="1"/>
+    <text x="510" y="24" text-anchor="middle" font-family="'Cairo', sans-serif" font-weight="600" font-size="14" fill="#E2E8F0">👥 إشراف مباشر للإدارة</text>
+  </g>
+</svg>
