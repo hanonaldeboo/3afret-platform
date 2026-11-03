@@ -88,15 +88,6 @@ export default function BranchesSection({ branches }: BranchesSectionProps) {
                 key={branch.id}
                 className="glass-panel glass-panel-hover rounded-3xl p-5 sm:p-7 flex flex-col justify-between group relative overflow-hidden border border-gold-500/25"
               >
-                {/* Top decorative accent */}
-                <div 
-                  className={`absolute top-0 right-0 left-0 h-1 bg-gradient-to-l ${
-                    isFirst 
-                      ? "from-red-500/70 via-gold-400/40 to-transparent group-hover:from-red-400" 
-                      : "from-gold-500/70 via-amber-400/40 to-transparent group-hover:from-gold-400"
-                  } transition-all`} 
-                />
-
                 <div>
                   {/* Header of the card */}
                   <div className="flex items-center justify-between gap-3 mb-4">
