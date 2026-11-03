@@ -2,7 +2,7 @@
 
 import React from "react";
 import Image from "next/image";
-import { CheckCircle, ExternalLink, Send, ShieldCheck, Sparkles, BadgeCheck } from "lucide-react";
+import { CheckCircle, ExternalLink, Send, Sparkles, BadgeCheck } from "lucide-react";
 import { OfficialChannel } from "@/lib/types";
 
 interface OfficialChannelSectionProps {
@@ -90,11 +90,6 @@ export default function OfficialChannelSection({ channel }: OfficialChannelSecti
                   <span>انضم إلى القناة الرسمية الآن</span>
                   <ExternalLink className="w-4 h-4" />
                 </a>
-
-                <div className="flex items-center justify-center sm:justify-start gap-2 text-xs text-slate-400">
-                  <ShieldCheck className="w-4 h-4 text-emerald-400 shrink-0" />
-                  <span>رابط رسمي مباشر وآمن 100%</span>
-                </div>
               </div>
             </div>
           </div>
