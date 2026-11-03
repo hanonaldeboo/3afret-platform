@@ -206,7 +206,7 @@ const getDefaultData = (): SiteData => {
     ],
     sectionsOrder: [
       { id: "hero", name: "الواجهة الرئيسية والبانر الترحيبي", enabled: true, order: 1 },
-      { id: "stats", name: "إحصائيات المنصة وإنجازات 3afret", enabled: true, order: 2 },
+      { id: "stats", name: "إحصائيات المنصة وإنجازات 3afret", enabled: false, order: 2 },
       { id: "branches", name: "فروع وجروبات البيع والشراء", enabled: true, order: 3 },
       { id: "channel", name: "قناة بيع وشراء الحسابات الرسمية", enabled: true, order: 4 },
       { id: "recharge", name: "استور الشحن الرسمي عبر واتساب", enabled: true, order: 5 },

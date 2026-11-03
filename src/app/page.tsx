@@ -2,7 +2,6 @@ import React from "react";
 import { getSiteData } from "@/lib/db";
 import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
-import StatsSection from "@/components/StatsSection";
 import BranchesSection from "@/components/BranchesSection";
 import OfficialChannelSection from "@/components/OfficialChannelSection";
 import WhatsappRechargeSection from "@/components/WhatsappRechargeSection";
@@ -25,7 +24,6 @@ export default function HomePage() {
 
   const sectionMap: Record<string, React.ReactNode> = {
     hero: <HeroSection key="hero" data={data} />,
-    stats: <StatsSection key="stats" stats={data.stats} />,
     branches: <BranchesSection key="branches" branches={data.branches} />,
     channel: <OfficialChannelSection key="channel" channel={data.officialChannel} />,
     recharge: <WhatsappRechargeSection key="recharge" recharge={data.whatsappRecharge} />,

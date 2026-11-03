@@ -206,7 +206,7 @@
     {
       "id": "stats",
       "name": "إحصائيات المنصة وإنجازات 3afret",
-      "enabled": true,
+      "enabled": false,
       "order": 2
     },
     {
