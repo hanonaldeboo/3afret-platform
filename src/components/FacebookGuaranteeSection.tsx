@@ -2,7 +2,7 @@
 
 import React from "react";
 import Image from "next/image";
-import { ShieldCheck, ExternalLink, CheckCircle, Lock, Award, Eye } from "lucide-react";
+import { ShieldCheck, ExternalLink, CheckCircle, Award, Eye } from "lucide-react";
 import { FacebookGuarantee } from "@/lib/types";
 
 interface FacebookGuaranteeSectionProps {
@@ -52,7 +52,6 @@ export default function FacebookGuaranteeSection({ guarantee }: FacebookGuarante
             <div className="lg:col-span-7 order-1 lg:order-2 space-y-4 sm:space-y-6 text-center sm:text-right">
               <div>
                 <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-blue-500/15 border border-blue-500/30 text-blue-400 text-xs font-bold mb-2.5 sm:mb-3">
-                  <Lock className="w-3.5 h-3.5" />
                   <span>{guarantee.badge || "وساطة وضمان فيسبوك المعتمد"}</span>
                 </div>
                 <h2 className="text-xl sm:text-3xl lg:text-4xl font-black text-white leading-tight mb-2 sm:mb-3">
