@@ -2,7 +2,7 @@
 
 import React from "react";
 import Image from "next/image";
-import { CheckCircle, ExternalLink, Send, ShieldCheck, Sparkles } from "lucide-react";
+import { CheckCircle, ExternalLink, Send, ShieldCheck, Sparkles, BadgeCheck } from "lucide-react";
 import { OfficialChannel } from "@/lib/types";
 
 interface OfficialChannelSectionProps {
@@ -44,9 +44,12 @@ export default function OfficialChannelSection({ channel }: OfficialChannelSecti
             {/* Content Details */}
             <div className="lg:col-span-7 order-1 lg:order-2 space-y-4 sm:space-y-6 text-center sm:text-right">
               <div>
-                <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-sky-500/15 border border-sky-500/30 text-sky-400 text-xs font-bold mb-2.5">
-                  <Send className="w-3.5 h-3.5" />
-                  <span>{channel.badge || "القناة الرسمية الموثقة"}</span>
+                <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-500/15 border border-emerald-500/35 text-emerald-400 text-xs sm:text-sm font-bold mb-2.5 shadow-sm">
+                  <svg className="w-3.5 h-3.5 fill-current shrink-0" viewBox="0 0 24 24">
+                    <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.312.045-.694.073-1.109-.06-.554-.176-1.267-.506-2.181-1.325-1.172-1.049-1.924-2.316-2.138-2.684-.213-.368-.023-.567.16-.75.166-.165.372-.423.558-.635.186-.211.248-.36.372-.599.124-.24.062-.45-.031-.635-.093-.186-.837-2.02-1.147-2.766-.303-.728-.61-.628-.838-.64-.216-.01-.465-.013-.713-.013-.248 0-.651.093-.992.465-.34.372-1.302 1.272-1.302 3.104 0 1.832 1.333 3.604 1.519 3.852.186.248 2.623 4.004 6.357 5.617.888.384 1.581.614 2.122.785.89.283 1.7.243 2.34.147.714-.107 2.18-892 2.49-1.753.31-.861.31-1.599.217-1.754-.093-.155-.34-.247-.714-.433z"/>
+                  </svg>
+                  <span>{channel.badge || "قناة واتساب الرسمية الموثقة"}</span>
+                  <BadgeCheck className="w-4 h-4 text-emerald-400 shrink-0" />
                 </div>
                 <h2 className="text-xl sm:text-3xl lg:text-4xl font-black text-white leading-tight mb-2">
                   {channel.title}
