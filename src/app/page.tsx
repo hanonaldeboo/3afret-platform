@@ -9,7 +9,6 @@ import FacebookGuaranteeSection from "@/components/FacebookGuaranteeSection";
 import TikTokSection from "@/components/TikTokSection";
 import CelebritiesSection from "@/components/CelebritiesSection";
 import FloatingWhatsapp from "@/components/FloatingWhatsapp";
-import Footer from "@/components/Footer";
 
 // Force dynamic so admin changes appear immediately
 export const dynamic = "force-dynamic";
@@ -50,8 +49,6 @@ export default function HomePage() {
       {data.settings.floatingWhatsappEnabled && (
         <FloatingWhatsapp recharge={data.whatsappRecharge} />
       )}
-
-      <Footer data={data} />
     </main>
   );
 }
