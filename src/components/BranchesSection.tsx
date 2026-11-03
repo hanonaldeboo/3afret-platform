@@ -66,15 +66,13 @@ export default function BranchesSection({ branches }: BranchesSectionProps) {
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-8 sm:mb-14">
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-gold-500/10 border border-gold-500/20 text-gold-400 text-xs sm:text-sm font-bold mb-2.5 sm:mb-3">
-            <span className="text-sm">🏪</span>
             <span>فروع ومجتمعات عفريت استور</span>
-            <span className="text-sm">👥</span>
           </div>
           <h2 className="text-2xl sm:text-4xl lg:text-5xl font-black text-white mb-2.5 sm:mb-4">
             فروع <span className="gold-text-gradient">بيع وشراء الحسابات</span>
           </h2>
           <p className="text-xs sm:text-base text-slate-300 px-2 max-w-2xl mx-auto">
-            انضم مباشرة إلى فروعنا الرسمية المعتمدة لبيع وشراء وتداول الحسابات. كل فرع يخضع لإشراف مباشر وضمان 3afret لتأمين صفقاتك بنسبة 100%.
+            ادخل الفرع اللي يناسبك واعرض أو اطلب حسابك وإنت مطمن.. إشراف أمني 24 ساعة وضمان عفريت في ضهرك عشان حقك ميروحش.
           </p>
         </div>
 
