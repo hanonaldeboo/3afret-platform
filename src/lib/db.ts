@@ -17,8 +17,8 @@ const getDefaultData = (): SiteData => {
     },
     hero: {
       tagline: "المنصة الرسمية المعتمدة رقمياً",
-      mainTitle: "بوابتك الآمنة لعالم",
-      highlightedTitle: "تجارة الحسابات والشحن الفوري",
+      mainTitle: "ملك الساحة وعفريت المجال في",
+      highlightedTitle: "تداول الحسابات وأسرع شحن ألعاب",
       subtitle: "نجمع لك فروع وجروبات بيع وشراء الحسابات، استور الشحن الرسمي على واتساب، وقنوات العروض والضمان الموثوقة في مكان واحد فاخر.",
       primaryCtaText: "استكشف فروع البيع والشراء",
       primaryCtaLink: "#branches",
