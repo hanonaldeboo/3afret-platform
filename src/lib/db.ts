@@ -100,7 +100,7 @@ const getDefaultData = (): SiteData => {
       bannerUrl: "/images/recharge-banner.jpg",
       channelUrl: "https://whatsapp.com/channel/0029VaW23cQ9sBIGmrdGdz3a",
       phoneNumber: "+201158620386",
-      defaultMessage: "مرحباً، أود شحن ألعاب / الاستفسار من متجر 3afret",
+      defaultMessage: "السلام عليكم، تواصلت معاك من موقع عفريت وحابب أستفسر بخصوص (شحن ألعاب / وساطة حسابات)",
       badge: "استور الشحن المعتمد 24/7",
       features: [
         "شحن شدات ببجي UC فوري بالـ ID خلال دقائق",

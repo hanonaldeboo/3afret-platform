@@ -15,7 +15,7 @@ export default function HeroSection({ data }: HeroSectionProps) {
     ? whatsappRecharge.phoneNumber.replace(/[^0-9]/g, "")
     : "201158620386";
   const whatsappHref = `https://wa.me/${cleanNumber}?text=${encodeURIComponent(
-    whatsappRecharge.defaultMessage || "مرحباً، أود شحن ألعاب / الاستفسار من متجر 3afret"
+    whatsappRecharge.defaultMessage || "السلام عليكم، تواصلت معاك من موقع عفريت وحابب أستفسر بخصوص (شحن ألعاب / وساطة حسابات)"
   )}`;
 
   return (

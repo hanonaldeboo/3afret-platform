@@ -14,7 +14,7 @@ export default function WhatsappRechargeSection({ recharge }: WhatsappRechargeSe
     ? recharge.phoneNumber.replace(/[^0-9]/g, "")
     : "201158620386";
   const directChatHref = `https://wa.me/${cleanNumber}?text=${encodeURIComponent(
-    recharge.defaultMessage || "مرحباً، أود شحن ألعاب / الاستفسار من متجر 3afret"
+    recharge.defaultMessage || "السلام عليكم، تواصلت معاك من موقع عفريت وحابب أستفسر بخصوص (شحن ألعاب / وساطة حسابات)"
   )}`;
   const channelHref = recharge.channelUrl || "https://whatsapp.com/channel/0029VaW23cQ9sBIGmrdGdz3a";
 
