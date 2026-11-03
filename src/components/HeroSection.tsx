@@ -34,14 +34,6 @@ export default function HeroSection({ data }: HeroSectionProps) {
       />
 
       <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        {/* Verification Tag */}
-        <div className="inline-flex items-center gap-1.5 sm:gap-2 px-3 sm:px-4 py-1.5 rounded-full bg-gold-500/10 border border-gold-500/30 text-gold-400 text-[11px] sm:text-sm font-semibold mb-4 sm:mb-6 shadow-gold-glow-sm">
-          <Sparkles className="w-3.5 h-3.5 text-gold-400 animate-pulse shrink-0" />
-          <span>{hero.tagline}</span>
-          <span className="w-1.5 h-1.5 rounded-full bg-gold-400"></span>
-          <span className="text-slate-300">علامة 3afret المعتمدة</span>
-        </div>
-
         {/* Main Title */}
         <h1 className="text-2xl sm:text-5xl md:text-6xl lg:text-7xl font-black text-white tracking-tight leading-snug sm:leading-snug mb-4 sm:mb-6">
           <span>{hero.mainTitle}</span>{" "}
