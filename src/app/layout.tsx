@@ -2,7 +2,7 @@ import type { Metadata, Viewport } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://afret-gamma.vercel.app"),
+  metadataBase: new URL("https://afret-game.vercel.app"),
   title: "3afret | ملك الساحة وعفريت المجال في تداول الحسابات وأسرع شحن ألعاب",
   description: "ريح بالك من الحوارات.. مع عفريت هتبيع وتشتري حسابك وتشحن في ثواني، كل الفروع المعتمدة وضمانك الحقيقي في مكان واحد.",
   keywords: ["3afret", "عفريت", "بيع حسابات", "شراء حسابات", "شحن ببجي", "جواهر فري فاير", "ضمان فيسبوك", "وساطة حسابات", "متجر شحن"],
@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "3afret | ملك الساحة وعفريت المجال في تداول الحسابات وأسرع شحن ألعاب",
     description: "ريح بالك من الحوارات.. مع عفريت هتبيع وتشتري حسابك وتشحن في ثواني، كل الفروع المعتمدة وضمانك الحقيقي في مكان واحد.",
-    url: "https://afret-gamma.vercel.app",
+    url: "https://afret-game.vercel.app",
     siteName: "3afret Store",
     images: [
       {
