@@ -10,8 +10,8 @@ import TikTokSection from "@/components/TikTokSection";
 import CelebritiesSection from "@/components/CelebritiesSection";
 import FloatingWhatsapp from "@/components/FloatingWhatsapp";
 
-// Force dynamic so admin changes appear immediately
-export const dynamic = "force-dynamic";
+// Fast Edge CDN caching with background revalidation
+export const revalidate = 60;
 
 export default function HomePage() {
   const data = getSiteData();

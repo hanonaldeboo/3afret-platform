@@ -1,5 +1,12 @@
 import type { Metadata, Viewport } from "next";
+import { Cairo } from "next/font/google";
 import "./globals.css";
+
+const cairo = Cairo({
+  subsets: ["arabic", "latin"],
+  weight: ["400", "500", "600", "700", "800", "900"],
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://afret-game.vercel.app"),
@@ -54,7 +61,7 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
       </head>
-      <body className="antialiased min-h-screen selection:bg-gold-500 selection:text-black">
+      <body className={`${cairo.className} antialiased min-h-screen selection:bg-gold-500 selection:text-black`}>
         {children}
       </body>
     </html>
