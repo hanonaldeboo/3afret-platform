@@ -2,26 +2,33 @@ import type { Metadata, Viewport } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://3afret.com"),
-  title: "3afret | المنصة الرسمية لبيع وشراء الحسابات، الشحن المباشر والوساطة المعتمدة",
-  description: "المنصة الرسمية المعتمدة رقمياً لعلامة 3afret. مجتمعات وجروبات بيع وشراء الحسابات، شحن فوري عبر واتساب، خدمات ضمان فيسبوك، ومعارض إعلانات المشاهير.",
+  metadataBase: new URL("https://afret-gamma.vercel.app"),
+  title: "3afret | ملك الساحة وعفريت المجال في تداول الحسابات وأسرع شحن ألعاب",
+  description: "ريح بالك من الحوارات.. مع عفريت هتبيع وتشتري حسابك وتشحن في ثواني، كل الفروع المعتمدة وضمانك الحقيقي في مكان واحد.",
   keywords: ["3afret", "عفريت", "بيع حسابات", "شراء حسابات", "شحن ببجي", "جواهر فري فاير", "ضمان فيسبوك", "وساطة حسابات", "متجر شحن"],
   authors: [{ name: "3afret Official Team" }],
   openGraph: {
-    title: "3afret | المنصة الرسمية لعلامة 3afret",
-    description: "كل فروع وجروبات البيع والشراء، خدمات الشحن المباشر والضمان الموثق في منصة واحدة فاخرة.",
-    url: "https://3afret.com",
-    siteName: "3afret Platform",
+    title: "3afret | ملك الساحة وعفريت المجال في تداول الحسابات وأسرع شحن ألعاب",
+    description: "ريح بالك من الحوارات.. مع عفريت هتبيع وتشتري حسابك وتشحن في ثواني، كل الفروع المعتمدة وضمانك الحقيقي في مكان واحد.",
+    url: "https://afret-gamma.vercel.app",
+    siteName: "3afret Store",
     images: [
       {
-        url: "/images/channel-banner.svg",
+        url: "/images/og-image.jpg",
         width: 1200,
-        height: 630,
-        alt: "3afret Platform Official",
+        height: 1200,
+        alt: "3afret Store Official",
+        type: "image/jpeg",
       },
     ],
     locale: "ar_AR",
     type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "3afret | ملك الساحة وعفريت المجال في تداول الحسابات وأسرع شحن ألعاب",
+    description: "ريح بالك من الحوارات.. مع عفريت هتبيع وتشتري حسابك وتشحن في ثواني، كل الفروع المعتمدة وضمانك الحقيقي في مكان واحد.",
+    images: ["/images/og-image.jpg"],
   },
   icons: {
     icon: "/images/logo.svg",
