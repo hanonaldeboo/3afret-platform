@@ -47,6 +47,8 @@ export const PlatformIcon = ({ platform }: { platform: GroupItem['platform'] }) 
   }
 };
 
+const BRANCH_ORDINALS = ["الفرع الأول", "الفرع الثاني", "الفرع الثالث"];
+
 interface BranchesSectionProps {
   branches: BranchItem[];
 }
@@ -76,12 +78,18 @@ export default function BranchesSection({ branches }: BranchesSectionProps) {
           </p>
         </div>
 
-        {/* Branches Grid Display: Two Branches Side-by-Side directly */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 max-w-5xl mx-auto">
+        {/* Branches Grid Display: Branches Side-by-Side directly */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 max-w-7xl mx-auto">
           {branches.map((branch, index) => {
             const group = branch.groups[0];
             if (!group) return null;
-            const isFirst = index === 0;
+            const ordinalLabel = BRANCH_ORDINALS[index] || `الفرع ${index + 1}`;
+            const badgeStyles = [
+              "bg-red-500/15 text-red-400 border border-red-500/30",
+              "bg-gold-500/15 text-gold-400 border border-gold-500/30",
+              "bg-emerald-500/15 text-emerald-400 border border-emerald-500/30",
+            ];
+            const badgeClass = badgeStyles[index % badgeStyles.length];
 
             return (
               <div
@@ -98,12 +106,8 @@ export default function BranchesSection({ branches }: BranchesSectionProps) {
                       </span>
                     </div>
 
-                    <span className={`text-[11px] sm:text-xs font-bold px-3 py-1 rounded-full ${
-                      isFirst 
-                        ? "bg-red-500/15 text-red-400 border border-red-500/30" 
-                        : "bg-gold-500/15 text-gold-400 border border-gold-500/30"
-                    }`}>
-                      {group.badge || (isFirst ? "الفرع الأول" : "الفرع الثاني")}
+                    <span className={`text-[11px] sm:text-xs font-bold px-3 py-1 rounded-full ${badgeClass}`}>
+                      {group.badge || ordinalLabel}
                     </span>
                   </div>
 
@@ -150,7 +154,7 @@ export default function BranchesSection({ branches }: BranchesSectionProps) {
                     rel="noopener noreferrer"
                     className="btn-gold flex-1 py-3 rounded-xl text-xs sm:text-sm font-extrabold flex items-center justify-center gap-2 active:scale-95 shadow-gold-glow-sm"
                   >
-                    <span>انضم إلى {isFirst ? "الفرع الأول" : "الفرع الثاني"} على واتساب</span>
+                    <span>انضم إلى {ordinalLabel} على واتساب</span>
                     <ExternalLink className="w-4 h-4" />
                   </a>
 
